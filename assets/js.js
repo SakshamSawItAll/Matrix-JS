@@ -19,6 +19,9 @@ var colorbg = ["rgba(0, 0, 0, 0.05)","rgba(0, 0, 0, 0.05)","rgba(0, 0, 0, 0.05)"
 
 function modi()
 {
+	bc+=1;
+	if(bc/9>0)
+		bc=0;
 	var ccc = 'rgba(';
 	for(var i=0;i<3;i++){
 		ccc+=(105+Math.floor(Math.random()*150)).toString();
